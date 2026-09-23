@@ -485,6 +485,25 @@
     max-width: 620px;
   }
 
+  .viewer-preview-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    grid-column: 2;
+    margin: 0 0 0 16px;
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .viewer-preview-link:hover { color: #ffe2a0; }
+
+  @media (max-width: 960px) {
+    .viewer-preview-link { grid-column: 1; margin-left: 0; }
+  }
+
   .hero-support p {
     color: #dbe8ee;
     font-size: 13px;
@@ -1478,6 +1497,7 @@
               <a href="kojipdf-download.html" class="btn btn-primary download-page-btn" data-ja="ダウンロードページへ" data-en="Go to Download Page">ダウンロードページへ</a>
             </div>
           </div>
+          <a href="kojiPDFviewer.html" class="viewer-preview-link" data-ja="※専用ビューアーkojiPDFviewerを試験的に作成中" data-en="* Dedicated viewer kojiPDFviewer is under experimental development">※専用ビューアーkojiPDFviewerを試験的に作成中</a>
         </div>
         <div class="hero-support">
           <p data-ja-html="SignPath Foundationのコード署名<sup>※</sup>取得を目指しています。応援として、Vectorでの評価やGitHubスターをいただけると助かります。" data-en-html="I am working toward SignPath Foundation code signing<sup>*</sup>. Your Vector rating or GitHub star would help support the project.">
